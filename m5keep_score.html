@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<!-- 10.10 Assignment -->
+
+<html>
+
+	<head>
+
+	<title>Assignment 10.10</title>
+	
+	<script type = "text/javascript">
+	<!--
+
+	var total = new Array ( 9 );
+
+	function start()
+	{
+	   for ( var i = 0; i < total.length; ++i )
+	   total[ i ] = 0;
+	} // end function start
+
+	function addEntry()
+	{
+	   var salary;
+	   var x;
+	   var sales = document.getElementById( "sales" );
+
+	   salary = 200 + parseInt( sales.newEntry.value ) * 0.09;
+	   x = Math.floor ( salary / 100 );
+
+		if ( salary < 0 )
+		return; // end the function immediately
+
+		else if ( x > 9 )
+		x = 10; // put in highest salary range
+
+		++total[ x - 2 ]
+
+	   outputArray();
+	} // end function addEntry
+
+	function outputArray()
+	{
+	   var sales = document.getElementById( "sales" );
+	   sales.output.value =
+	   "Number of people who earned salaries " +
+	   "in the following ranges:\n" +
+	   "$200-$299 \t " + total[ 0 ] + "\n" +
+	   "$300-$399 \t " + total[ 1 ] + "\n" +
+	   "$400-$499 \t " + total[ 2 ] + "\n" +
+	   "$500-$599 \t " + total[ 3 ] + "\n" +
+	   "$600-$699 \t " + total[ 4 ] + "\n" +
+	   "$700-$799 \t " + total[ 5 ] + "\n" +
+	   "$800-$899 \t " + total[ 6 ] + "\n" +
+	   "$900-$999 \t " + total[ 7 ] + "\n" +
+	   "$1000 and over \t " + total[ 8 ];
+	} // end function outputArray
+	  // -->
+	</script>
+	</head>
+
+	<body onload = "start()">
+
+	<form id = "sales" action = "">
+
+	<p>Enter sales amount: <br />
+
+	<input type = "text" name = "newEntry" />
+
+	<input type = "button" value = "Submit"
+
+	onclick = "addEntry()" /><br />
+
+	<textarea name = "output" rows = "10" cols = "70">
+
+	</textarea></p>
+
+	</form>
+
+	</body>
+</html>
+   

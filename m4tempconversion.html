@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+      	<meta charset = "utf-8">
+      	<title></title>
+         <script type = "text/javaScript">
+              <!--
+              function celcius()
+              {
+                  var f = document.getElementById("degree").value;
+                  var c = 5/9*(f-32);
+                  var answer = document.getElementById( "answerArea" );
+                  answerArea.innerHTML = "The degree's in Celcius is " + c;
+              }
+              function fahrenheit()
+              {
+                  var c = document.getElementById("degree").value;
+                  var f = 9/5*c+32;
+                  var answer = document.getElementById( "answerArea" );
+                  answerArea.innerHTML = "The degree's in Celcius is " + f;
+                  
+                  
+              }
+
+	           //-->
+         </script>     
+   </head>
+   <body>
+      <form>
+         <p><label> Enter either a Fahrenheit or a Celcius temperature:
+            <input type = "text" id = "degree" type = "text" size = "25" maxlength = "30">
+         </label></p>
+         <input type = "button" value = "Fahrenheit" onClick = "return fahrenheit()"/>
+         <input type = "button" value = "Celcius" onClick = "return celcius()"/>          
+      </form>
+      <div id = "answerArea"></div>
+      
+   </body>
+</html>

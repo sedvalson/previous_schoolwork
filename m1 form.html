@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Chapter 3 Exercise 3.5</title>
+   </head>
+   <body>
+
+      <p> a)Students were asked to rate the food in the cafeteria
+	  on a scale of 1 to 10. Use a meter element with text to
+	  its left and right to indicate that the average rating 
+	  was 7 out of 10.</p>
+
+      0 <meter min="0"
+	 max = "10"
+	 value= "7" /></meter> 10
+
+      <p> b) Create a details element that displays the summary 
+	  text "Survey Results" for Part (a).When the user clicks
+	  the arrow next to the summary text, an explanatory paragraph
+	  about the survey should be displayed. </p>
+
+      <details>
+	  <summary>Survey Results</summary>
+	  <ul>
+		<li>"On average, students rated the cafeteria food on 
+	 	     a scale of 1 to 10. On average, students rated the food a 7."</li>
+	  </ul></details>
+
+      <p> c) Create a text input element for a first name. The element
+	  should automatically receive the focus when the form is rendered
+	  in a browser.</p>
+
+      <p><label>First Name:
+	 <input type = "text" autofocus /> (first name) </label> </p>
+
+      <p> d) Modify Part (c) to eliminate the label element and use placeholder 
+	     text in the input element.</p>
+	  <input type = "text" placeholder = "first name"/>
+
+      <p> e) Use a datalist to provide an autocomplete list for five states. </p>
+      
+      <input type = "text" placeholder = "Select a State" list = "states" />
+      <datalist id = "states">
+	<option value = "Florida">
+        <option value = "Ohio">
+        <option value = "Utah">
+        <option value = "California">
+        <option value = "Wyoming">
+      </datalist>
+      
+     <p> f) Create a range input element that allows the user to select a number from 1 to 100.</p> 
+	
+     <label> Range from 1 - 100: 
+	0 <input type = "range"
+	 min = "0"
+	 max = "100"
+	 value = "50" /> 100
+	</label>
+     
+     <p>g) Specify that autocomplete should not be allowed for a form. Show only the form’s opening tag. </p>
+
+     <form method = "post" autocomplete "off">
+	<p> <label> First name:
+	   <input type = "text" placeholder = "first name" />
+	</label></p>	
+
+     <p>h) Use a mark element to highlight the second sentence in the following paragraph.</p>
+	 
+	<p>Students were asked to rate the food in the cafeteria on a scale of 1 to 10. 
+	<mark>The average result was 7.</mark></p> 
+      
+   </body>
+</html>

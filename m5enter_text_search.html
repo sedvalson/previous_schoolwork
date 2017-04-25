@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<!-- 11.13 Assignment -->
+
+<html>
+
+	<head>
+
+	<title>Assignment 11.13</title>
+
+	<script type = "text/javascript">
+	<!--
+
+	function search()
+	{
+	   var myForm = document.getElementById( "myForm" );
+	   var count = 0;
+	   var key =
+	   myForm.key.value.toLowerCase().charAt( 0 );
+	   var stringToSearch =
+	   myForm.searchString.value.toLowerCase();
+	   var result;
+
+	for ( var i = 0; i < stringToSearch.length; ++i )
+	{
+	   result = stringToSearch.indexOf( key, i );
+
+		if ( result != -1 )
+	{
+
+	   	++count;
+
+	   i = result + 1; // modify counter to start
+	   // from location of last found character
+	} // end if
+	   	else
+	   	break;
+	} // end for
+
+		if ( count == 0 )
+		myForm.output.value = key +
+		" not found";
+		else
+		myForm.output.value = count +
+		" occurrence(s) of " + key + " found";
+	} // end function search
+	// -->
+
+	</script>
+
+	</head>
+
+	<body>
+
+	<form id = "myForm" action = "">
+
+	<p>Enter some text<br />
+
+	<textarea name = "searchString" rows = "4"
+	]]cols = "55"></textarea>
+
+	</p>
+
+	<p>Enter a character to search for
+
+	<input name = "key" type = "text" size = "5" />
+
+	<input type = "button" value = "Search"
+	onclick = "search()" />
+
+	</p>
+	<p>Results
+
+	<input name = "output" type = "text"
+	size = "40" />
+
+	</p>
+	</form>
+	</body>
+  
+</html>

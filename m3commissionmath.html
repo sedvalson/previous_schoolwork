@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+      	<meta charset = "utf-8">
+      	<title>Module 3 Exercise 6.16</title>
+	<script type = "text/javascript">
+		<!--
+		// input variables
+		var item1;
+		var item2;
+		var item3;
+		var item4;
+		// parseInt variables
+		var i1;
+		var i2;
+		var i3;
+		var i4;
+		// calculation variables
+		var i1Total;
+		var i2Total;
+		var i3Total;
+		var i4Total;
+		var grossSales;
+		var ninePercent;
+		var totCommission;
+		
+		// Window prompts
+		item1 = window.prompt( "How many of the first items were sold?" );
+
+		item2 = window.prompt( "How many of the second items were sold?" );
+
+		item3 = window.prompt( "How many of the third items were sold?" );
+
+		item4 = window.prompt( "How many of the fourth items were sold?");
+
+		
+		// Transfer strings to integers
+		i1 = parseInt( item1 );
+		i2 = parseInt( item2 );
+		i3 = parseInt( item3 );
+		i4 = parseInt( item4 );
+
+		// Total item sales
+		i1Total = i1 * 239.99;
+		i2Total = i2 * 129.75;
+		i3Total = i3 * 99.95;
+		i4Total = i4 * 350.89;
+		
+		// Calculations
+		grossSales = i1Total + i2Total + i3Total + i4Total;
+		ninePercent = grossSales * .09;
+		totCommission = 200 + ninePercent;
+
+		// HTML5 text displaying salespersons earnings
+		document.writeln( "<h1>Salespersons total sales was $" + grossSales + " Salespersons nine percent commission was $" + ninePercent + ". The total earnings were equal $" + totCommission + ".</h1>" );
+		// -->
+	</script>
+   </head>
+   <body>
+   </body>
+</html>

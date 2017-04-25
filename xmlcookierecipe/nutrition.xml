@@ -1,0 +1,51 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type = "text/xml" href = "nutrition.xsl"?>
+
+<!-- nutrition.xml -->
+
+<cookies>
+   <name>Grandma Whites Cookies</name>
+   <servingSize>one package</servingSize>
+   <ingredient>
+      <name>Calories</name>
+      <amount>260</amount>
+   </ingredient>
+   <ingredient>
+      <name>Fat Calories</name>
+      <amount>100</amount>
+   </ingredient>
+   <ingredient>
+      <name>Fat</name>
+      <amount>11 Grams</amount>
+   </ingredient>
+   <ingredient>
+      <name>Saturated Fats</name>
+      <amount>2 grams</amount>
+   </ingredient>
+   <ingredient>
+      <name>Cholesterol</name>
+      <amount>5 milligrams</amount>
+   </ingredient>
+   <ingredient>
+      <name>Sodium</name>
+      <amount>210 milligrams</amount>
+   </ingredient>
+   <ingredient>
+      <name>Carbohydrates</name>
+      <amount>36 grams</amount>
+   </ingredient>
+   <ingredient>
+      <name>Fiber</name>
+      <amount>2 grams</amount>
+   </ingredient>
+   <ingredient>
+      <name>Sugar</name>
+      <amount>15 grams</amount>
+   </ingredient>
+   <ingredient>
+      <name>Proteins</name>
+      <amount>5 grams</amount>
+   </ingredient>
+</cookies>   
+      
+      

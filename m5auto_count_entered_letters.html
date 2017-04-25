@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!-- 11.14 Assignment -->
+
+<html>
+
+	<head>
+
+	<title>Assignment11.14</title>
+
+	<script type = "text/javascript">
+	<!--
+
+	function run()
+	{
+	   var display = document.getElementById( "display" );
+	   var alphabet;
+	   var input;
+	   var i;
+	   var index;
+	   alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+	   var table = new Array( 26 );
+
+		for ( i = 0; i < table.length; i++ )
+		table[ i ] = 0;
+
+	   	input = window.prompt( "Enter a sentence" ).toLowerCase();
+
+		for ( i = 0; i < input.length; i++ )
+	{
+
+	   index = alphabet.indexOf( input.charAt( i ) );
+	   table[ index ]++;
+	} // end for
+
+	  display.displayBox.value = "";
+
+		for ( i = 0; i < table.length; i++ )
+	{
+
+		display.displayBox.value +=
+		alphabet.substring( i, i + 1 ) + ": " +
+		table[ i ] + "\n";
+	} // end for
+	} // end function run
+	  // -->
+
+	</script>
+	
+	</head>
+
+	<body onload = "run()">
+
+	<form id = "display" action = "">
+
+	<div>
+
+	<textarea rows = "26" cols = "5" name = "displayBox">
+	</textarea>
+
+	</div>
+
+	</form>
+	</body>
+
+</html>

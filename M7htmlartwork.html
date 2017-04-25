@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Fig. 14.7: roundedrectangle.html -->
+<!-- Drawing a rounded rectangle on a canvas. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+         <title>Quadratic Curves</title>
+   </head>
+   <body>
+      <canvas id = "drawRoundedRect" width = "600" height = "600"
+         style = "border: 1px solid black;">
+      </canvas>
+
+      <script>
+         var canvas = document.getElementById("drawRoundedRect");
+         var context = canvas.getContext("2d")
+         
+         function drawRndedRect(sx, sy, lineLength, fillColor, borderColor)
+         {
+            context.beginPath();
+            context.moveTo((sx+10), sy);
+            context.lineTo((sx + (lineLength-10)), sy);
+            context.quadraticCurveTo((sx+lineLength), sy, (sx+lineLength), (sy+10));
+            context.lineTo((sx + lineLength), (sy+lineLength-10));
+            context.quadraticCurveTo((sx+lineLength), (sy+lineLength), (sx+lineLength-10), (sy+lineLength));
+            context.lineTo((sx+10), (sy+lineLength));
+            context.quadraticCurveTo((sx), (sy+lineLength), (sx), (sy+lineLength-10));
+            context.lineTo(sx, sy+10);
+            context.quadraticCurveTo((sx), sy, sx+10, sy);
+            context.closePath();
+            context.fillStyle = fillColor;
+            context.fill(); //fill with the fillStyle color
+            context.strokeStyle = borderColor;
+            context.lineWidth = 6;
+            context.stroke(); //draw 6-pixel royalblue border
+         }
+         drawRndedRect (15, 5, 80, "yellow", "blue");
+         drawRndedRect (200, 5, 30, "red", "black");
+         
+      </script>
+   </body>
+</html>

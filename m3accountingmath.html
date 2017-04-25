@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+      	<meta charset = "utf-8">
+      	<title>Module 3 Exercise 6.16</title>
+	<script type = "text/javascript">
+		<!--
+		var accountNumber; // account number string entered by user
+		var beginMonthBalance; // balance beginning of month string entered by user
+		var totalCharged; // amount charged for items string entered by user
+		var totalCredits; // total of all credits applied entered by user
+		var creditLimit; // allowed credit limit entered by user
+		var monthBal;	
+		var totCharge;	
+		var totCred;	
+		var credLim;
+		var newBalance;	
+		
+		// Window prompts
+		accountNumber = window.prompt( "Enter customers account number" );
+
+		beginMonthBalance = window.prompt( "Enter the balance at the beginning of the month" );
+
+		totalCharged = window.prompt( "Enter the total of all items charged by this customer this month" );
+
+		totalCredits = window.prompt( "Enter the total of all credits applied to this customers account this month");
+
+		creditLimit = window.prompt( "Enter the allowed credit limit" );
+		
+		monthBal = parseInt( beginMonthBalance );
+		totCharge = parseInt( totalCharged );
+		totCred = parseInt( totalCredits );
+		credLim = parseInt( creditLimit );
+		
+		newBalance = monthBal + totCharge - totCred;
+
+		document.writeln( "<h1>Your new balance is " + newBalance + "</h1>" );
+		
+		if (newBalance > credLim)
+			document.writeln( "<p>Credit Limit Exceeded!</p>" );
+		// -->
+	</script>
+   </head>
+   <body>
+   </body>
+</html>
